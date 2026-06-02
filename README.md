@@ -90,7 +90,7 @@ http://localhost:3000/api
 <img width="1919" height="872" alt="Screenshot 2026-04-18 151208" src="https://github.com/user-attachments/assets/80151be8-606b-4c2c-91a3-0962849dbfe0" />
 
 
-2. Register / login
+2.Register / login
 <img width="1919" height="878" alt="Screenshot 2026-04-18 151237" src="https://github.com/user-attachments/assets/26fdc8cd-2cc5-42b0-963d-7c3140002a46" />
 
 
