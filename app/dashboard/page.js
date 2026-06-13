@@ -7,8 +7,11 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { getUserProfile, updateUser } from "../services/userServices";
 import EditProfileModal from "../../components/EditProfileModal";
+import { Suspense } from 'react';
 
-export default function DashboardPage() {
+
+
+function DashboardContent() {
     const [isProfileOpen, setIsProfileOpen] = useState(false);
     const [showProfileModal, setShowProfileModal] = useState(false);
     const [userId, setUserId] = useState(null);
@@ -210,4 +213,12 @@ export default function DashboardPage() {
             </main>
         </div>
     );
+}
+
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DashboardContent />
+    </Suspense>
+  );
 }
