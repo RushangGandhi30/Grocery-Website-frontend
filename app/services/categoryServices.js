@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3001";
-const API_URL = `${API_URL}/api`;
+// const API_URL = `${API_URL}/api`;
 
 export const getAllCategory = async () => {
     try {
