@@ -84,7 +84,7 @@ const CategoryGrid = () => {
                     >
                         <div className={`w-full aspect-square ${colors[index % colors.length]} rounded-[2rem] flex items-center justify-center mb-3 shadow-sm transition-all group-hover:shadow-xl group-hover:shadow-emerald-900/5 overflow-hidden relative border-2 border-transparent group-hover:border-white`}>
                             <img
-                                src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${category.cateogryImage}`}
+                                src={`${process.env.NEXT_PUBLIC_IMG_URL || 'http://localhost:3001'}/${category.cateogryImage}`}
                                 alt={category.categoryName}
                                 className="w-full h-full object-cover drop-shadow-xl transition-transform duration-500 group-hover:scale-110"
                                 onError={(e) => {
