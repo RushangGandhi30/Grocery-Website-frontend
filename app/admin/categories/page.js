@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Plus, Search, Edit2, Trash2, Package, Image as ImageIcon, X, Loader2, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getAllCategory, BASE_URL, addCategory, updateCategory, deleteCategory } from '@/app/services/categoryServices';
+import { getAllCategory, API_URL, addCategory, updateCategory, deleteCategory } from '@/app/services/categoryServices';
 import { getProductsByCategoryId } from '@/app/services/productsServices';
 import toast from 'react-hot-toast';
 
@@ -54,7 +54,7 @@ export default function CategoriesPage() {
                 finalData.push({
                     id: c.categoryId,
                     name: c.categoryName,
-                    image: c.cateogryImage ? `${BASE_URL}/${c.cateogryImage}` : '',
+                    image: c.cateogryImage ? `${API_URL}/${c.cateogryImage}` : '',
                     items: count
                 });
             }
