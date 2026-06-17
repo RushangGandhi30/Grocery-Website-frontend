@@ -193,7 +193,7 @@ function ProductsContent() {
                                 <div className="aspect-square bg-gray-50 rounded-[2rem] mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative overflow-hidden">
                                     <div className="absolute inset-0 bg-emerald-500/0 group-hover:bg-emerald-500/5 transition-colors" />
                                     <img
-                                        src={`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001'}/${product.productImg}`}
+                                        src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${product.productImg}`}
                                         alt={product.productName}
                                         className="w-full h-full object-cover"
                                         onError={(e) => {

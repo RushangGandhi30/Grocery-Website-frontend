@@ -241,7 +241,7 @@ export default function AdminOrdersPage() {
                                             <div key={item.id} className="flex gap-3 items-center">
                                                 <div className="w-10 h-10 rounded-xl bg-white border border-gray-100 shadow-sm flex items-center justify-center text-lg flex-shrink-0 relative">
                                                     {item.productImg && (item.productImg.startsWith('static') || item.productImg.startsWith('/')) ? (
-                                                        <img src={`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001'}/${item.productImg}`} alt={item.name} className="w-full h-full object-contain p-1" />
+                                                        <img src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${item.productImg}`} alt={item.name} className="w-full h-full object-contain p-1" />
                                                     ) : (
                                                         <span>{item.productImg}</span>
                                                     )}

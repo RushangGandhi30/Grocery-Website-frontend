@@ -188,7 +188,7 @@ export default function OrderHistoryPage() {
                                                     <div key={item.orderItemId || idx} className="w-14 h-14 bg-white rounded-2xl p-2 shadow-sm ring-1 ring-gray-100 flex items-center justify-center z-10 relative bg-gradient-to-br from-white to-gray-50">
                                                         {item.productImg && (item.productImg.startsWith('static') || item.productImg.startsWith('/')) ? (
                                                             <img
-                                                                src={`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001'}/${item.productImg}`}
+                                                                src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${item.productImg}`}
                                                                 alt={item.productName}
                                                                 className="w-full h-full object-contain filter drop-shadow-sm hover:scale-110 transition-transform duration-300"
                                                             />
@@ -302,7 +302,7 @@ export default function OrderHistoryPage() {
                                                                     <div className="w-12 h-12 bg-gray-50/50 rounded-xl p-1.5 flex items-center justify-center">
                                                                         {item.productImg && (item.productImg.startsWith('static') || item.productImg.startsWith('/')) ? (
                                                                             <img
-                                                                                src={`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001'}/${item.productImg}`}
+                                                                                src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${item.productImg}`}
                                                                                 alt={item.productName}
                                                                                 className="w-full h-full object-contain group-hover:scale-110 transition-transform"
                                                                             />

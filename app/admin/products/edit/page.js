@@ -67,7 +67,7 @@ function EditProductContent() {
                             image: null
                         });
 
-                        const baseUrl = 'http://localhost:3001'; // Defaulting to 3001 as seen in services
+                        const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
                         const imagePath = p.productImage || p.productImg;
 
                         if (imagePath) {
