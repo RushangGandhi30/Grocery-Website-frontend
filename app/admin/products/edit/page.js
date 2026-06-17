@@ -67,7 +67,7 @@ function EditProductContent() {
                             image: null
                         });
 
-                        const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+                        const baseUrl = process.env.NEXT_PUBLIC_IMG_URL || "http://localhost:3001";
                         const imagePath = p.productImage || p.productImg;
 
                         if (imagePath) {

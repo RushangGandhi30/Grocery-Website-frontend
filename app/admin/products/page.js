@@ -193,7 +193,7 @@ function ProductsContent() {
                                             )}
 
                                             <img
-                                                src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${product.productImg}`}
+                                                src={`${process.env.NEXT_PUBLIC_IMG_URL || 'http://localhost:3001'}/${product.productImg}`}
                                                 alt={product.productName}
                                                 className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-sm p-4"
                                                 onError={(e) => {

@@ -268,7 +268,7 @@ export default function CartPage() {
                                     <div className="w-24 h-24 bg-gray-50 rounded-[2rem] flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-500">
                                         {item.image.startsWith('static') || item.image.startsWith('/') ? (
                                             <img
-                                                src={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'}/${item.image}`}
+                                                src={`${process.env.NEXT_PUBLIC_IMG_URL || 'http://localhost:3001'}/${item.image}`}
                                                 alt={item.name}
                                                 className="w-full h-full object-contain p-2"
                                             />
